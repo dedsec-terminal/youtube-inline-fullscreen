@@ -42,6 +42,20 @@ To build or modify the extension locally:
 
 Then load the extension into Chrome via the [Extensions page](chrome://extensions), enable Developer Mode, and click **Load unpacked**.
 
+### Firefox / Zen
+
+Since Chromium and current Firefox/Zen builds require different MV3 background configurations, the Firefox manifest is provided separately rather than modifying the existing Chromium manifest.
+Firefox does not currently support Manifest V3 background service workers in all release channels.
+
+To load the extension in Firefox or Zen Browser, use:
+
+app/manifest.firefox.json ### Firefox / Zen
+
+A Firefox compatibility manifest (`manifest.firefox.json`) is included.
+Chrome and Chromium browsers should continue using:
+
+app/manifest.json
+
 ## License
 
 This project is licensed under the **GNU General Public License v3.0**.
