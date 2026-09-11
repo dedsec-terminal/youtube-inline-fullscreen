@@ -44,17 +44,15 @@ Then load the extension into Chrome via the [Extensions page](chrome://extension
 
 ### Firefox / Zen
 
-Since Chromium and current Firefox/Zen builds require different MV3 background configurations, the Firefox manifest is provided separately rather than modifying the existing Chromium manifest.
-Firefox does not currently support Manifest V3 background service workers in all release channels.
+Since Chromium and current Firefox/Zen builds require different MV3 background configurations, the Firefox manifest is provided separately rather than modifying the existing Chromium manifest. Firefox uses the `background.scripts` configuration in this manifest.
 
-To load the extension in Firefox or Zen Browser, use:
+To load the extension in Firefox or Zen Browser:
 
-app/manifest.firefox.json ### Firefox / Zen
+1. Open `about:debugging`.
+2. Select **This Firefox** (or the equivalent temporary-add-on page in Zen).
+3. Click **Load Temporary Add-on...** and choose `app/manifest.firefox.json`.
 
-A Firefox compatibility manifest (`manifest.firefox.json`) is included.
-Chrome and Chromium browsers should continue using:
-
-app/manifest.json
+Chrome and Chromium browsers should continue using `app/manifest.json` from the [Extensions page](chrome://extensions).
 
 ## License
 
