@@ -430,4 +430,4 @@
         }
     }
 
-})(globalThis.browser ?? globalThis.chrome);
+})(globalThis.chrome ?? globalThis.browser);

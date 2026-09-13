@@ -1,4 +1,4 @@
-const browserAPI = globalThis.browser ?? globalThis.chrome;
+const browserAPI = globalThis.chrome ?? globalThis.browser;
 
 const DEFAULT_SETTINGS = {
   autoEnable: false,

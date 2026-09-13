@@ -11,8 +11,7 @@
   },
 
   "background": {
-    "scripts": ["background.js"],
-    "type": "module"
+    "scripts": ["background.js"]
   },
 
   "permissions": [

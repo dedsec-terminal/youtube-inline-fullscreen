@@ -1,6 +1,6 @@
 import { DEFAULT_SETTINGS } from './defaults.js';
 
-const browserAPI = globalThis.browser ?? globalThis.chrome;
+const browserAPI = globalThis.chrome ?? globalThis.browser;
 
 // When the popup HTML has loaded
 document.addEventListener('DOMContentLoaded', function () {
